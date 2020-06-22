@@ -43,35 +43,63 @@
 	<p class="from-them" id="fleur-2">moi c'est Fleur, j'ai 12 ans. tu te sens comment ?</p>
 	<p class="from-me" id="rep-2"></p>
 
-	<p class="from-them" id="fleur-3">moi ça va moyen en ce moment. j'arrive pas, ou alors très peu, à dormir. j'ai le sentiment d'être inutile face à tout ce qui se passe autour de moi, de près ou de loin. Pas toi ?</p>		
+	<p class="from-them" id="fleur-3">moi ça va moyen en ce moment.	j'arrive pas vraiment à dormir.	j'ai le sentiment d'être inutile, de près ou de loin, face à tout ce qui se passe autour de moi. Pas toi ?</p>		
 	<p class="from-me" id="rep-3"></p>
 
 	<p class="from-them" id="fleur-4">ça te gêne si je te demande de me répondre par oui ou par non ?</p>
 	<p class="from-me" id="rep-4"></p>
-		
-	<p class="from-them" id="fleur-5">Merci. Du coup, est ce que toi aussi, tes parents ou des proches t'ont déjà sorti que tu t'en faisais trop ?</p>
+
+	<p class="from-them" id="fleur-5">Merci.</p>
 	<p class="from-me" id="rep-5"></p>
-	
-	<p class="from-them" id="fleur-6">Et concernant le réchauffement climatique, tu t'en fais trop ?</p>
+		
+	<p class="from-them" id="fleur-6">Du coup, est ce que toi aussi, tes parents ou des proches t'ont déjà sorti que tu t'en faisais trop ?</p>
 	<p class="from-me" id="rep-6"></p>
 	
-	<p class="from-them" id="fleur-7">Tu trouves pas ça injuste qu'on te reproche ça alors que c'est en partie leur génération qui est responsable, ou du moins beaucoup plus que la tienne ?</p>
+	<p class="from-them" id="fleur-7">Et concernant le réchauffement climatique, tu t'en fais trop ?</p>
 	<p class="from-me" id="rep-7"></p>
-
-	<p class="from-them" id="fleur-8">sincèrement, tu penses qu'on va réussir à redresser la barre ?</p>
+	
+	<p class="from-them" id="fleur-8">Tu trouves pas ça injuste qu'on te reproche ça alors que c'est en partie leur génération qui est responsable, ou du moins beaucoup plus que la tienne ?</p>
 	<p class="from-me" id="rep-8"></p>
 
-	<p class="from-them" id="fleur-9">Tu pourrais faire preuve d'indulgence envers le gouvernements et ses dirigeant.e.s ?</p>
+	<p class="from-them" id="fleur-9">sincèrement, tu penses qu'on va réussir à redresser la barre ?</p>
 	<p class="from-me" id="rep-9"></p>
 
-	<p class="from-them" id="fleur-10">Moi je sais pas honnêtement. Je trouve que quand on apprend qu'ils continuent de prendre l'avion à tout bout de champ... ça me décourage.</p>
+	<p class="from-them" id="fleur-10">Tu pourrais faire preuve d'indulgence envers le gouvernements et ses dirigeant.e.s ?</p>
 	<p class="from-me" id="rep-10"></p>
 
-	<p class="from-them" id="fleur-11">Y a pas longtemps j'ai vu une vidéo de Balade Mentale sur les "planètes Terres disparues"1, et ça racontait entre autre les différentes ères glacières, ou ..bllantes par lesquelles a dû passer notre planète avant de pouvoir nous accueillir.. c'était fascinant.</p>
+	<p class="from-them" id="fleur-11">Moi je sais pas honnêtement. Je trouve que quand on apprend qu'ils continuent de prendre l'avion à tout bout de champ... ça me décourage.</p>
 	<p class="from-me" id="rep-11"></p>
 
-	<p class="from-them" id="fleur-12">Est ce que des fois tu éprouves du remord à nous savoir les êtres vivants les plus destructeurs de l'histoire planétaire ?</p>
+	<p class="from-them" id="fleur-12">
+		Y a pas longtemps j'ai vu une vidéo<sup>1</sup> qui racontait les différentes ères glacières, ou ..bouillantes par lesquelles a dû passer notre planète avant de pouvoir nous accueillir.. c'était fascinant.
+		
+		Par exemple, si on imagine que l'histoire de la Terre était un livre de 1000 pages, l'arrivée de l'être humain serait inscrite à la toute dernière page, et occuperait à peine un quart de celle-ci..
+	
+		Et pendant des siècles, la Terre n'était qu'une boule de feu, ou un vaste océan sans vie.1 qui racontait les différentes ères glacières, ou ..bouillantes par lesquelles a dû passer notre planète avant de pouvoir nous accueillir.. c'était fascinant.
+		
+		Par exemple, si on imagine que l'histoire de la Terre était un livre de 1000 pages, l'arrivée de l'être humain serait inscrite à la toute dernière page, et occuperait à peine un quart de celle-ci..
+		
+		Et pendant des siècles, la Terre n'était qu'une boule de feu, ou un vaste océan sans vie.</p>
 	<p class="from-me" id="rep-12"></p>
+
+	<p class="from-them no-bg" id="fleur-13"></p>
+
+	<div id='audio-1'>	
+		<figure>
+		<!-- figcaption>Listen to the T-Rex:</figcaption -->
+		<audio
+			controls
+			src='http://www.orangefreesounds.com/wp-content/uploads/2020/05/Sound-of-rain-on-a-tin-roof.mp3'>
+				Your browser does not support the
+				<code>audio</code> element.
+		</audio>
+		</figure>
+	</div>
+
+	<p class="from-me" id="rep-13"></p>
+
+	<p class="from-them" id="fleur-14">Est ce que des fois tu éprouves du remord à nous savoir les êtres vivants les plus destructeurs de l'histoire planétaire ?</p>
+	<p class="from-me" id="rep-14"></p>
 
 
 	<!-- Is writing -->
@@ -106,6 +134,7 @@
 
 	<script>
 		let go = document.getElementById('go');
+		let audio1 = document.getElementById('audio-1');
 		let button = document.getElementById('button');
 		let submit = document.getElementById('submit');
 		let input = document.getElementById('input');
@@ -123,6 +152,7 @@
 			button.style.display = 'block';	
 			smallText.style.display = 'block';
 			loader.style.display = 'block';
+			submit.disabled = true;
 			setTimeout("starting()", 2500);
 			setTimeout("displayMessages()", 2500);			
 		});
@@ -145,8 +175,25 @@
 			smallText.style.display = 'none';
 			loader.style.display = 'none';	
 			submit.disabled = false;
-			document.getElementById('fleur-' + i + '').style.display = 'block';	
-			document.getElementById('fleur-' + i + '').scrollIntoView();							 
+			document.getElementById('fleur-' + i + '').style.display = 'block';			
+			document.getElementById('fleur-' + i + '').scrollIntoView();	
+
+			if (i == 13) { 
+				document.getElementById('fleur-' + i + '').style.display = 'none';		
+				audio1.style.display = "block"; 					
+			}
+
+			if(i == 5 || i == 11 || i == 12 || i == 13) { /* No answer needed */
+				submit.disabled = true;
+				var time = 4000;
+				if (i == 11) { time = 6500 }
+				if (i == 12) { time = 1000 }
+				setTimeout("smallText.style.display = 'block'", 500);
+				setTimeout("loader.style.display = 'block'", 500);
+				setTimeout("loader.scrollIntoView()", 500);
+				setTimeout("submit.disabled = true", 500);
+				setTimeout("displayMessages()", time);
+			}			
 		}
 		
 		function displayRepsonses() {
@@ -155,8 +202,8 @@
 			}
 			document.getElementById('rep-' + i + '').innerHTML = input.value;	
 			document.getElementById('rep-' + i + '').scrollIntoView();		
-			
-			if ( i >= 5) {
+								
+			if ( i >= 6) {
 				response = input.value;
 				response = response.trim();
 				response = response.toLowerCase();
@@ -189,7 +236,6 @@ body {
   	-webkit-box-direction: normal;
     flex-direction: column;
 }
-
 p {
 	max-width: 255px;
 	word-wrap: break-word;
@@ -200,13 +246,15 @@ p {
 	border-radius:25px;
 	display: none;
 }
-
 p:before, p:after {
     content:"";
 	position:absolute;
     bottom:-2px;
     height:20px;
-  }
+}
+#audio-1 {
+	display: none;
+}
 
 .from-me {
 	color:white; 
@@ -274,11 +322,11 @@ footer {
 }
 
 /* -----------------------------------------
-  =CSS3 Loading animations
+  CSS3 Loading animations
 -------------------------------------------- */
 
-/* =Elements style
----------------------- */
+/* Elements style */
+
 .load-wrapp {
 	float: left;
 	width: 100px;
@@ -305,8 +353,7 @@ footer {
 	background-color: #4b9cdb;
 }
 
-/* =Animate the stuff
------------------------- */
+/* Animate the stuff */
 
 .load-3 .line:nth-last-child(1) {
 	animation: loadingC 0.6s 0.1s linear infinite;
