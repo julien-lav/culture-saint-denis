@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="Content-Language" content="en" />
+
+	<title>Welcome to Turbo 360</title>
+	<link rel="shortcut icon" href="https://lh3.googleusercontent.com/MpnmfR3zYPTojA03QbhGgwIHucmH5s4G2vbIlADYhODL488MQt_BuVztv9LYmJbhwkScYN0DIXuh4d10YMsLbWXT">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
+	<link rel="stylesheet" href="https://cdn.turbo360-dev.com/admin/assets/scaffold/css/style.min.css" />
+</head>
+
+<body>
+	{{! <div id="root"></div> }}
+	<center style="padding-bottom:10px;">
+		Conversation avec fleur 
+	</center>
+
+	<h5 id="introduction">
+	Nous vous souhaitons la bienvenue. 
+	<br />
+	<br />
+	Vous allez être invité.e à répondre aux messages de personnages, ceux-ci ont été créés dans le but de favoriser votre empathie et aisance face aux questions qui vont vous être posées. 
+	<br />
+	<br />
+	Vous pouvez répondre ou ne pas répondre, vous êtes tout à fait libres de faire ce que bon vous semble. 
+	<br />
+	<br />
+	Bonne route.
+	<br />
+	<br />
+	</h5>	
+	
+	<button name="button" class="btn btn-primary" id="go">C'est parti !</button>
+
+	<br />
+	<span style="margin-bottom: 100px;">
+	<p class="from-them" id="fleur-1">Salut</p>
+	<p class="from-me" id="rep-1"></p>
+	<p class="from-them" id="fleur-2">moi c'est Fleur, j'ai 12 ans. tu te sens comment ?</p>
+	<p class="from-me" id="rep-2"></p>
+
+	<p class="from-them" id="fleur-3">moi ça va moyen en ce moment. j'arrive pas, ou alors très peu, à dormir. j'ai le sentiment d'être inutile face à tout ce qui se passe autour de moi, de près ou de loin. Pas toi ?</p>		
+	<p class="from-me" id="rep-3"></p>
+
+	<p class="from-them" id="fleur-4">ça te gêne si je te demande de me répondre par oui ou par non ?</p>
+	<p class="from-me" id="rep-4"></p>
+		
+	<p class="from-them" id="fleur-5">Merci. Du coup, est ce que toi aussi, tes parents ou des proches t'ont déjà sorti que tu t'en faisais trop ?</p>
+	<p class="from-me" id="rep-5"></p>
+	
+	<p class="from-them" id="fleur-6">Et concernant le réchauffement climatique, tu t'en fais trop ?</p>
+	<p class="from-me" id="rep-6"></p>
+	
+	<p class="from-them" id="fleur-7">Tu trouves pas ça injuste qu'on te reproche ça alors que c'est en partie leur génération qui est responsable, ou du moins beaucoup plus que la tienne ?</p>
+	<p class="from-me" id="rep-7"></p>
+
+	<p class="from-them" id="fleur-8">sincèrement, tu penses qu'on va réussir à redresser la barre ?</p>
+	<p class="from-me" id="rep-8"></p>
+
+	<p class="from-them" id="fleur-9">Tu pourrais faire preuve d'indulgence envers le gouvernements et ses dirigeant.e.s ?</p>
+	<p class="from-me" id="rep-9"></p>
+
+	<p class="from-them" id="fleur-10">Moi je sais pas honnêtement. Je trouve que quand on apprend qu'ils continuent de prendre l'avion à tout bout de champ... ça me décourage.</p>
+	<p class="from-me" id="rep-10"></p>
+
+	<p class="from-them" id="fleur-11">Y a pas longtemps j'ai vu une vidéo de Balade Mentale sur les "planètes Terres disparues"1, et ça racontait entre autre les différentes ères glacières, ou ..bllantes par lesquelles a dû passer notre planète avant de pouvoir nous accueillir.. c'était fascinant.</p>
+	<p class="from-me" id="rep-11"></p>
+
+	<p class="from-them" id="fleur-12">Est ce que des fois tu éprouves du remord à nous savoir les êtres vivants les plus destructeurs de l'histoire planétaire ?</p>
+	<p class="from-me" id="rep-12"></p>
+
+
+	<!-- Is writing -->
+		<div id="small-text">Fleur est en train d'écrire...</div>
+		<div id="load-wrapp">
+			<div class="load-wrapp">		
+				<div class="load-3">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>    	
+			</div>
+		<div class="clear"></div>
+		</div>
+
+	</span>
+
+	<div id="button" style="background-color:#ffffff;"> 
+		<form>	
+			<input type="text" id="input" style="width:90%;position:fixed;bottom:55px; left:5%;z-index:1000;">
+			<input type="submit" value="Envoyer" name="Envoyer" class="btn btn-primary" id="submit" style="width:90%;position:fixed;bottom:10px; left:5%;z-index:1000;">
+		<form>
+	</div>
+
+	<footer>
+		 &nbsp;
+	</footer>
+	
+	<script type="text/javascript" src="https://cdn.turbo360-dev.com/admin/assets/scaffold/js/vendor.min.js"></script>
+	<script type="text/javascript" src="https://cdn.turbo360-dev.com/admin/common.js"></script>
+	<script type="text/javascript" src="https://cdn.turbo360-dev.com/admin/scaffold.js"></script>
+
+	<script>
+		let go = document.getElementById('go');
+		let button = document.getElementById('button');
+		let submit = document.getElementById('submit');
+		let input = document.getElementById('input');
+		let loader = document.getElementById('load-wrapp');
+		let smallText = document.getElementById('small-text');
+		let f1 = document.getElementById('fleur-1');
+		let intro = document.getElementById('introduction');						
+		let i = 0;
+
+		button.style.display = 'none';
+		
+		go.addEventListener('click', function (event) {
+			intro.style.display = 'none';
+			go.style.display = 'none';		
+			button.style.display = 'block';	
+			smallText.style.display = 'block';
+			loader.style.display = 'block';
+			setTimeout("starting()", 2500);
+			setTimeout("displayMessages()", 2500);			
+		});
+
+		function starting() {
+			f1.style.display = 'block';
+		}
+
+		submit.addEventListener('click', function (event) {
+			displayRepsonses();
+			smallText.style.display = 'block';
+			loader.style.display = 'block';
+			loader.scrollIntoView();
+			submit.disabled = true;
+			setTimeout("displayMessages()", 3000);
+		});
+
+		function displayMessages() {
+			i++;				
+			smallText.style.display = 'none';
+			loader.style.display = 'none';	
+			submit.disabled = false;
+			document.getElementById('fleur-' + i + '').style.display = 'block';	
+			document.getElementById('fleur-' + i + '').scrollIntoView();							 
+		}
+		
+		function displayRepsonses() {
+			if (input.value != "") {
+				document.getElementById('rep-' + i + '').style.display = 'block';		
+			}
+			document.getElementById('rep-' + i + '').innerHTML = input.value;	
+			document.getElementById('rep-' + i + '').scrollIntoView();		
+			
+			if ( i >= 5) {
+				response = input.value;
+				response = response.trim();
+				response = response.toLowerCase();
+				if(response == "no" || response == "n") {
+					response = "non";
+				}
+				if(response == "yes" || response == "y" || response == "o") {
+					response = "oui";
+				}
+				//console.log(response);
+			}
+			input.value = "";							
+		}
+		
+	</script>
+
+<style>
+
+body {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+ 	max-width: 85%;
+	margin: 20px auto;
+	padding: 2px auto;
+  	display: -webkit-box;
+  	display: flex;
+	background-color: #ffffff;
+  	-webkit-box-orient: vertical;
+  	-webkit-box-direction: normal;
+    flex-direction: column;
+}
+
+p {
+	max-width: 255px;
+	word-wrap: break-word;
+	margin-bottom: 12px;
+	line-height: 24px;
+	position:relative;
+	padding:10px 20px;
+	border-radius:25px;
+	display: none;
+}
+
+p:before, p:after {
+    content:"";
+	position:absolute;
+    bottom:-2px;
+    height:20px;
+  }
+
+.from-me {
+	color:white; 
+	background:#0B93F6;
+	align-self: flex-end;
+	float: right;
+}
+.from-me:before {
+	right:-7px;
+	border-right:20px solid #0B93F6;
+	border-bottom-left-radius: 16px 14px;
+	-webkit-transform:translate(0, -2px);
+			transform:translate(0, -2px);
+}
+.from-me:after {
+	right:-56px;
+	width:26px;
+	background:white;
+	border-bottom-left-radius: 10px;
+	-webkit-transform:translate(-30px, -2px);
+			transform:translate(-30px, -2px);
+}
+.from-them {
+	background:#E5E5EA;
+	color:black;
+	clear: both;
+}
+.from-them:before {
+		left:-7px;
+		border-left:20px solid #E5E5EA;
+		border-bottom-right-radius: 16px 14px;
+		-webkit-transform:translate(0, -2px);
+		        transform:translate(0, -2px);
+}
+.from-them:after {
+	left:4px;
+	width:26px;
+	background:white;
+	border-bottom-right-radius: 10px;
+	-webkit-transform:translate(-30px, -2px);
+			transform:translate(-30px, -2px);
+}
+
+/* */
+
+footer {
+	position: fixed;
+	z-index:100;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 80px;
+	background-color: white;
+	text-align: center;
+}
+
+@media screen and (max-width: 321px) {
+	span {
+		margin-bottom: 125px !important;
+		padding-bottom:10px;
+	}
+	center {
+		padding-bottom:10px !important;
+	}
+}
+
+/* -----------------------------------------
+  =CSS3 Loading animations
+-------------------------------------------- */
+
+/* =Elements style
+---------------------- */
+.load-wrapp {
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin: 0 10px 10px 0;
+	padding: 10px 10px 10px;
+	border-radius: 5px;
+	text-align: center;
+}
+#load-wrapp {
+	display: none;
+}
+.load-wrapp p {
+	padding: 0 0 20px;
+}
+.load-wrapp:last-child {
+	margin-right: 0;
+}
+.line {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	background-color: #4b9cdb;
+}
+
+/* =Animate the stuff
+------------------------ */
+
+.load-3 .line:nth-last-child(1) {
+	animation: loadingC 0.6s 0.1s linear infinite;
+}
+.load-3 .line:nth-last-child(2) {
+	animation: loadingC 0.6s 0.2s linear infinite;
+}
+.load-3 .line:nth-last-child(3) {
+	animation: loadingC 0.6s 0.3s linear infinite;
+}
+.l-3 {
+	animation-delay: 0.72s;
+}
+
+@keyframes loadingC {
+  0 {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+#small-text {
+	display: none;
+	padding-top:45px;
+	padding-left:20px;
+	font-size: 12px;	
+	color: #999;
+}
+
+</style>
+
+</body>
+</html>
